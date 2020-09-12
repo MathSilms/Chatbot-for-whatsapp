@@ -8,9 +8,8 @@
     "venom-bot": "^1.1.4"
   },
   "devDependencies": {
-    "sucrase": "^3.15.0"
   },
   "scripts": {
-    "dev": "sucrase-node src/index.js"
+    "dev": "node src/index.js"
   }
 }
