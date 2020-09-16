@@ -5,7 +5,10 @@ const venonbt = require('venom-bot');
 venonbt.create().then((client) => start(client));
 function start(client) {
   client.onMessage((message) => {
-    client.sendText(message.from, stages[getStage(message.from)].obj.execute());
+    client.sendText(
+        message.from, 
+        stages.step[getStage("5522998868691@c.us")].obj.execute()
+      );
   });
 }
 
