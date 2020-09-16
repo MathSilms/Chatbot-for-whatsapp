@@ -1,7 +1,7 @@
 const menu  = require('../menu')
 
 function execute(){
-    return 'Olá, seja bem vindo. Sou seu assistente virtual!'
+    return ['Olá, seja bem vindo. Sou seu assistente virtual!']
 }
 
 exports.execute = execute;
