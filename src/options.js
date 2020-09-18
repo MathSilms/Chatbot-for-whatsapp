@@ -1,4 +1,4 @@
-const menu = {
+const options = {
     1:{
         description:"X-burguer",
         preco:9.90
@@ -29,4 +29,4 @@ const menu = {
     }
 }
 
-exports.menu = menu
+exports.menu = options
