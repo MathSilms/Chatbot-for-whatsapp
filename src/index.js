@@ -13,8 +13,8 @@ const venonbt = require('venom-bot');
  function start(client) {
    client.onMessage((message) => {
      let resp = stages.step[getStage(message.from)].obj.execute(message.from, message.body)
-     for (let index = 0; index < array(resp).length; index++) {
-       const element = array(resp)[index];
+     for (let index = 0; index < resp.length; index++) {
+       const element = resp[index];
        client.sendText(message.from,element)
     }
    });
