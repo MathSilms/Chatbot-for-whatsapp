@@ -54,6 +54,11 @@ Depois de autenticado e tudo funcionando, você terá acesso a muitos dados sobr
 
 ![](./objeto.png) 
 
+obs.: Deixei um console log comentado no index, caso queira vizualizar um exemplo parecido no seu terminal.
+
+com esses dados recebidos, existem infinitas possibilidades de coisas que podemos fazer.
+
+qualquer duvida ou sugestão:
 
 
 Matheus de Oliveira Mendonça – [@MathSilms](https://www.linkedin.com/in/mathsilms/) – Mateheusoliver@gmail.com
