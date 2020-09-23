@@ -1,10 +1,10 @@
-# Chatbot-for-whatsapp
+![](./bot.png) # Chatbot-for-whatsapp
 
 > Chatbot para trocar mensagens atráves do seu whatsapp.
 
 O chatbot pode responder os contatos do seu whatsapp baseado nas mensagens que ele lê. O projeto atual foi feito simulando uma pizzaria e o bot faz o atendimento. 
 
-![](./bot.png)
+
 
 ## Instalação
 
