@@ -22,6 +22,7 @@ no seu editor de código preferencial, abra o terminal e digite:
 ```sh
 npm install
 ```
+
 ### yarn
 
 ```sh
@@ -32,45 +33,27 @@ essa ação irá instalar os seguintes módulos:
 
 venom-bot": "^1.1.4"
 
-## Exemplo de uso
-
-Alguns exemplos interessantes e úteis sobre como seu projeto pode ser utilizado. Adicione blocos de códigos e, se necessário, screenshots.
-
 ## Configuração para Desenvolvimento
 
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
+Depois de instalado os módulos, execute o script criado para inicializar o projeto: 
+
+### NPM
 
 ```sh
-make install
-npm test
+npm dev
+```
+### yarn
+
+```sh
+yarn dev
 ```
 
-## Histórico de lançamentos
+Isso irá executar a aplicação e gerar, no seu terminal, um QR code para autenticação do whatsapp web. Após isso, sua instância será salve e toda vez que iniciar a aplicação não precisará ler o Qr code novamente.
 
-* 0.2.1
-    * MUDANÇA: Atualização de docs (código do módulo permanece inalterado)
-* 0.2.0
-    * MUDANÇA: Remove `setDefaultXYZ()`
-    * ADD: Adiciona `init()`
-* 0.1.1
-    * CONSERTADO: Crash quando chama `baz()` (Obrigado @NomeDoContribuidorGeneroso!)
-* 0.1.0
-    * O primeiro lançamento adequado
-    * MUDANÇA: Renomeia `foo()` para `bar()`
-* 0.0.1
-    * Trabalho em andamento
+Depois de autenticado e tudo funcionando, você terá acesso a muitos dados sobre o usuário e a mensagem recebida pelo bot. Um exemplo:
 
-## Meta
+![](./objeto.png) 
 
-Seu Nome – [@SeuNome](https://twitter.com/...) – SeuEmail@exemplo.com
 
-Distribuído sob a licença XYZ. Veja `LICENSE` para mais informações.
 
-(https://github.com/othonalberto/)
-
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[wiki]: https://github.com/seunome/seuprojeto/wiki
+Matheus de Oliveira Mendonça – [@MathSilms](https://www.linkedin.com/in/mathsilms/) – Mateheusoliver@gmail.com
