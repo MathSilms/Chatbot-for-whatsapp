@@ -7,8 +7,6 @@
   "dependencies": {
     "venom-bot": "^1.1.4"
   },
-  "devDependencies": {
-  },
   "scripts": {
     "dev": "node src/index.js"
   }

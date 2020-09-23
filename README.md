@@ -6,27 +6,35 @@
 
 O chatbot pode responder os contatos do seu whatsapp baseado nas mensagens que ele lê. O projeto atual foi feito simulando uma pizzaria e o bot faz o atendimento. 
 
+Você vai precisar de dois celulares conectados com whatsapp. Um envia as mensagens e o outro é usado pelo bot para receber e responder. ( também pode pedir a um familiar ou amigo para ajudar ) 
+
+O ideal é usar um celular com um número novo, para não correr riscos de algum contato enviar mensagem e o bot responder por acidênte. 
 
 
 ## Instalação
 
-OS X & Linux:
+Baixe ou clone o repositório para ter acesso ao código e desenvolver.
+
+no seu editor de código preferencial, abra o terminal e digite:
+
+### NPM
 
 ```sh
-npm install my-crazy-module --save
+npm install
 ```
-
-Windows:
+### yarn
 
 ```sh
-edit autoexec.bat
+yarn install
 ```
+
+essa ação irá instalar os seguintes módulos:
+
+venom-bot": "^1.1.4"
 
 ## Exemplo de uso
 
 Alguns exemplos interessantes e úteis sobre como seu projeto pode ser utilizado. Adicione blocos de códigos e, se necessário, screenshots.
-
-_Para mais exemplos, consulte a [Wiki][wiki]._ 
 
 ## Configuração para Desenvolvimento
 
@@ -58,15 +66,7 @@ Seu Nome – [@SeuNome](https://twitter.com/...) – SeuEmail@exemplo.com
 
 Distribuído sob a licença XYZ. Veja `LICENSE` para mais informações.
 
-[https://github.com/yourname/github-link](https://github.com/othonalberto/)
-
-## Contributing
-
-1. Faça o _fork_ do projeto (<https://github.com/yourname/yourproject/fork>)
-2. Crie uma _branch_ para sua modificação (`git checkout -b feature/fooBar`)
-3. Faça o _commit_ (`git commit -am 'Add some fooBar'`)
-4. _Push_ (`git push origin feature/fooBar`)
-5. Crie um novo _Pull Request_
+(https://github.com/othonalberto/)
 
 [npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/datadog-metrics
