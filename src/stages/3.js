@@ -12,7 +12,7 @@ function execute(user, msg){
     if(message === '#'){
         banco.db[user].stage = 4
         
-        return [stages.step[4].obj.execute(user,  '')]
+        return stages.step[4].obj.execute(user,  '')
     }
 
 
