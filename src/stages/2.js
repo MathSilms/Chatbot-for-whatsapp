@@ -10,7 +10,7 @@ function execute(user, message){
 
     if(message === '#'){
         banco.db[user].stage = 3
-        return ['Estamos fechando seu pedido, ok?']
+        return ['Digite seu endereço para entrega']
     }
 
     let resume = ` Resumo do pedido \n`;
