@@ -48,7 +48,9 @@ npm dev
 yarn dev
 ```
 
-Isso irá executar a aplicação e gerar, no seu terminal, um QR code para autenticação do whatsapp web. Após isso, sua instância será salve e toda vez que iniciar a aplicação não precisará ler o Qr code novamente.
+Isso irá executar a aplicação e gerar, no seu terminal, um QR code para autenticação do whatsapp web. Com seu aparelho em mãos, leia o código.
+
+ Após isso, sua instância será salva e toda vez que iniciar a aplicação não precisará ler o Qr code novamente.
 
 Depois de autenticado e tudo funcionando, você terá acesso a muitos dados sobre o usuário e a mensagem recebida pelo bot. Um exemplo:
 
