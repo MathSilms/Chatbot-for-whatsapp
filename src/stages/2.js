@@ -1,29 +1,29 @@
-const banco = require('../database/banco')
+const banco = require("../database/banco");
 
+function execute(user, msg) {
+  if (msg === "*") {
+    banco.db[user].stage = 0;
+    return ["Pedido cancelado com sucesso"];
+  }
 
-function execute(user, message){
-    
-    if(message === '*'){
-        banco.db[user].stage = 0;
-        return ['Pedido Cancelado com sucesso'];
-    }
+  if (msg === "#") {
+    banco.db[user].stage = 3;
+    return ["Digite o endereço por favor :"];
+  }
 
-    if(message === '#'){
-        banco.db[user].stage = 3
-        return ['Digite seu endereço para entrega']
-    }
+  let resumo = "  RESUMO DO PEDIDO \n";
+  let total = 0;
+  banco.db[user].itens.forEach((value) => {
+    console.log(value);
+    resumo += `${value.descricao} ----------------  ${value.preco} \n`;
 
-    let resume = ` Resumo do pedido \n`;
-    let total = 0;
-    banco.db[user].itens.forEach( ( value ) =>{
-        total += value.price;
-        resume += `${velue.description} - - - - - - - -  ${value.price} \n`
-    });
-    
-    resume += ' - - - - - - - - - - - - - - - \n';
-    resume += `Total R$ ${total}`;
-    
-    return [resume,' - - - - - - - - - ' ,`Seu total é : ${total}`]
+    total += value.preco;
+  });
+
+  resumo += "-------------------------\n";
+  resumo += ` Total R$ ${total}`;
+
+  return [resumo, "Para confirmar digite # ou para cancelar digite * "];
 }
 
 exports.execute = execute;

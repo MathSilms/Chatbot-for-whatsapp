@@ -1,13 +1,12 @@
-const banco = require('../database/banco');
+const banco = require("../database/banco");
 
-
-
-function execute( user, msg ) {
-    banco.db[user].stage = 0;
-    return [
-        'Seu pedido chegará em breve! \n'
-        ,'Obrigado pela preferência, espero te ver novamente por aqui!'
-    ]
+function execute(user, msg) {
+  banco.db[user].stage = 0;
+  return [
+    "Obrigado pela preferencia.",
+    "Aguarde, seu pedido chegará em breve",
+    "Mais informações ligue para 33333-3311",
+  ];
 }
 
 exports.execute = execute;
