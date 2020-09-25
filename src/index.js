@@ -5,10 +5,11 @@ const stages = require("./stages");
 venom.create().then((client) => start(client));
 function start(client) {
   client.onMessage((message) => {
+    console.log(message.sender)
     let resp = stages.step[getStage(message.from)].obj.execute(
       message.from,
       message.body,
-      message.sender.name
+      message.sender.pushname
     );
     for (let index = 0; index < resp.length; index++) {
       const element = resp[index];

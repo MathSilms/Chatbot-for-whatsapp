@@ -1,6 +1,6 @@
 # Chatbot-for-whatsapp             
 
-![](./bot.png)                                     
+![width:200px](./bot.png)                                     
 
 > Chatbot para trocar mensagens atráves do seu whatsapp.
 

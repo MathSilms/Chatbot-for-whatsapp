@@ -6,14 +6,16 @@ function execute(user, msg, contato) {
     let menu = " CARDAPIO \n\n";
   
     Object.keys(options.menu).forEach((value) => {
+      //console.log(options.menu)
       let element = options.menu[value];
-      menu += `${value} - ${element.descricao}        R$ ${element.preco} \n`;
+      console.log(element)
+      menu += `${value} - ${element.description}        R$ ${element.price} \n`;
     });
   
     banco.db[user].stage = 1;
   
     return [
-      `Olá ${contato} sou umassistente virtual, irei apresentar o carpádio, para fazer o pedido basta enviar o codigo do produto`,
+      `Olá ${contato} sou um assistente virtual, irei apresentar o carpádio, para fazer o pedido basta enviar o codigo do produto`,
       menu,
     ];
   }
