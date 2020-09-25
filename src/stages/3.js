@@ -1,9 +1,9 @@
   
-const banco = require("../banco");
+const banco = require("../database/banco");
 const stages = require("../stages");
 
 function execute(user, msg) {
-    
+
   if (msg === "*") {
     banco.db[user].stage = 0;
     return ["Pedido cancelado com sucesso"];
