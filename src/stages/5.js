@@ -1,4 +1,4 @@
-const banco = require("../banco");
+const banco = require("../database/banco");
 let estagioInterno = 0;
 
 function execute(user, msg) {

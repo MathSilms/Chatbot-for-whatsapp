@@ -5,7 +5,7 @@
   "author": "Matheus Oliveira <62664418+MathSilms@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
-    "venom-bot": "^1.1.4"
+    "venom-bot": "^2.0.5"
   },
   "scripts": {
     "dev": "node src/index.js"
