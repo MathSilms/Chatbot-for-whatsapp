@@ -2,7 +2,9 @@ const options  = require('../options')
 const banco = require('../database/banco')
 
 
-function execute(user, msg, contato) {
+function execute(user, msg, contato,SendMSG) {
+
+  SendMSG(msg.from, "Deseja Olhar o nosso cardápio de bebidas?")
     let menu = " CARDAPIO \n\n";
   
     Object.keys(options.menu).forEach((value) => {

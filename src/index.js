@@ -2,14 +2,19 @@ const venom = require("venom-bot");
 const banco = require("./database/banco");
 const stages = require("./stages");
 
+function SendMSG(){
+  client.sendText(message.from, element);
+}
+
 venom.create().then((client) => start(client));
 function start(client) {
   client.onMessage((message) => {
-    console.log(message.sender)
+    console.log(message)
     let resp = stages.step[getStage(message.from)].obj.execute(
       message.from,
       message.body,
-      message.sender.pushname
+      message.sender.pushname,
+      SendMSG
     );
     for (let index = 0; index < resp.length; index++) {
       const element = resp[index];

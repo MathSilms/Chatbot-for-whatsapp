@@ -9,13 +9,13 @@ function execute(user, msg) {
 
   if (msg === "#") {
     banco.db[user].stage = 2;
-    return ["Estamos fechando seu pedido, ok?"];
+    return ["Posso fechar seu pedido?"];
   }
 
   if (!options.menu[msg]) {
     return [
       "Código inválido, digite corretamente",
-      "```Digite # para finalizar ou * para cancelar```",
+      "```Digite # para finalizar o pedido ou * para cancelar```",
     ];
   }
 
@@ -23,7 +23,7 @@ function execute(user, msg) {
 
   return [
     `Item(${options.menu[msg].descricao}) adiconado com sucesso`,
-    "```Digite # para finalizar ou * para cancelar```",
+    "```Digite o codigo do próximo produto ou # para finalizar. Caso queira cancelar, digite *```",
   ];
 }
 
